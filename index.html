@@ -7,32 +7,36 @@
     </head>
 
     <body>
-        <header>
+        <header class="info">
             <h1>British Summer Institute 2016</h1>
             <ul>
-                <li>London</li>
-                <li>Fountains Abbey</li>
-                <li>Edinburgh</li>
-                <li>The Highlands</li>
-                <li>Back to Edinburgh</li>
+                <li><a href="#london">London</a></li>
+                <li><a href="#fountains-abbey">Fountains Abbey</a></li>
+                <li><a href="#edinburgh">Edinburgh</a></li>
+                <li><a href="#the-highlands">The Highlands</a></li>
+                <li><a href="#back-to-edinburgh">Back to Edinburgh</a></li>
             </ul>
         </header>
         
         <main>
             <article>
-                <section>
-                    <a name="London"></a>
+                <!-- I tried using <section> instead of <div> but I couldn't get any CSS to work with it?? so I gave up lol -->
+                <div class="odd">
+                    <a name="london"></a>
                     <h2>London</h2>
-                    <figure><img src="Images/London.jpg"></figure>
+                    <figure>
+                        <img src="Images/London.jpg" alt="a garden in London">
+                    </figure>
                     <p>We spent the first two weeks, the bulk of the program, in London, England. I've been incredibly fortunate
                         to travel a lot because of my dad's job, so this was my third time visiting London, and it was by far my
                         favorite place I had ever traveled before. We went to plays, museums, and lots of street markets. What I
                         remember most of all, though, is all of the food from the amazing restaurants we went to.
                     </p>
-                </section>
-                <section>
+                </div>
+                <div class="even">
+                    <a name="fountains-abbey"></a>
                     <h2>Fountains Abbey</h2>
-                    <figure><img src="Images/fountains-abbey.jpg"></figure>
+                    <img src="Images/fountains-abbey.jpg" alt="a wall in Fountains Abbey">
                     <p>On our way up to Scotland, we stopped at many places, but Fountains Abbey was by far my favorite. We
                         were allowed to fully interact with the ruins, instead of admiring from a distance like Stonehenge. I may have
                         climbed through a window. It had rained all morning, so by the time we got back to the bus, my shoes and socks
@@ -40,20 +44,22 @@
                         could dry off my feet at least a bit. They didn't sell any rain boots because, and I quote, "it's not the rainy
                         season." It was literally raining as she said this.
                     </p>
-                </section>
-                <section>
+                </div>
+                <div class="odd">
+                    <a name="edinburgh"></a>
                     <h2>Edinburgh</h2>
-                    <figure><img src="Images/edinburgh-1.jpg"></figure>
+                    <img src="Images/edinburgh-1.jpg" alt="Edinburgh Castle in the fog">
                     <p>Remember how I said London WAS my favorite place I had ever traveled? It was replaced by Edinburgh within
                         a day. I don't love London any less than I did before, Edinburgh is just such an incredible city. While what
                         I remember about London was the food, what I remember most about Edinburgh is the atmosphere (okay, and the
                         food, too). Despite being such a big city, everyone was so kind and would truly go out of their way to help
                         a bunch of clueless American college students.
                     </p>
-                </section>
-                <section>
+                </div>
+                <div class="even">
+                    <a name="the-highlands"></a>
                     <h2>The Highlands</h2>
-                    <figure><img src="Images/Highlands.jpg"></figure>
+                    <img src="Images/Highlands.jpg" alt="mountains in the Scottish Highlands">
                     <p>Despite being Kansas born-and-bred, I thought I was pretty accustomed to mountains, having spent many summers
                         in Colorado as a kid. I was NOT PREPARED for the Highlands. Quite possibly the most beautiful place on Earth.
                         Words and pictures from my lackluster phone camera do it no justice. We took a three-day circle around the
@@ -62,22 +68,23 @@
                         that looked interesting, all we had to do was shout and he'd pull over for us to explore. Every bit of it was
                         incredible, but I could have spent all days just staring at these mountains.
                     </p>
-                </section>
-                <section>
+                </div>
+                <div class="odd">
+                    <a name="back-to-edinburgh"></a>
                     <h2>Back to Edinburgh</h2>
-                    <figure><img src="Images/Edinburgh-2.jpg"></figure>
+                    <img src="Images/Edinburgh-2.jpg" alt="a pond in Edinburgh">
                     <p>After our trip around the Highlands, we spent another week in Edinburgh before heading back Stateside. Like
                         London, lots of museums, lots of restaurants (we didn't have a kitchen in our dorm, okay?), and lots of
                         exploring. Probably the best food I had was at Kismot, and Indian and Bangladeshi restaurant. They're home to the
                         "Kismot Killer", a curry so spicy you have to sign a waver before they'll serve it to you. Our professor
                         explicitly banned us from trying it. It has been known to hospitalize people before.
                     </p>
-                </section>
+                </div>
             </article>
         </main>
 
-        <footer>
-            <p>&#169; 2020 Gillian Marsh</p>
+        <footer class="info">
+            <p id="footer">&#169; 2020 Gillian Marsh</p>
         </footer>
     </body>
 </html>
